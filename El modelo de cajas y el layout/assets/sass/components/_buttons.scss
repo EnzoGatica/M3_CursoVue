@@ -1,0 +1,32 @@
+// _buttons.scss
+
+@import '../abstracts/variables'; 
+@import '../abstracts/mixins';    
+
+.button--primary {
+    @include button-styles($btn-primary-color); 
+    outline: 0.0625rem solid $color-grey;
+    &:hover {
+        color: $color-grey;
+        outline: 0.0625rem solid $color-grey;
+    }
+
+    &:focus {
+        color: $color-grey;
+        outline: 0.0625rem solid $color-grey;
+    }
+}
+
+.button--secondary {
+    @include button-styles($btn-secondary-color); 
+    color: $color-white;
+    &:hover {
+        background-color: $turquoise-green;
+        color: $color-white;
+    }
+
+    &:focus {
+        color: $color-black;
+        outline: 0.0625rem solid $color-grey;
+    }
+}
